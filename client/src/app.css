@@ -1,27 +1,215 @@
-@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;500;600;700;900&display=swap');
-* {
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@100;200;300;400;500;600;700;800;900&display=swap'); 
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* -------Nav-bar------------------- */
 .navbar {
-    height: 50px;
+    height: 72px;
     border-bottom: 0.25px solid #D0D0D0;
 }
 
 .navbar .container-fluid{
-    padding: 3px 40px;
+    padding: 0px 25px;
 }
 
-.navbar-text {
+.navbar .navbar-text {
     width: 124px;
     height: 35px;
     flex-shrink: 0;
     color: #716966;
-    font-family: Chivo;
+    font-family: 'Chivo', sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+/* ---------Home--------------- */
+.home{
+
+}
+
+.home .top-section{
+    background-color: #fff;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px 0 20px;
+
+}
+
+.home .top-section .top-part{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.home .top-section .top-part a{
+    text-decoration: none;
+    color: #000;
+}
+
+.home .top-section .top-part a svg{
+
+}
+
+.home .top-section .top-part a p{
+    margin: 0;
+    color: #716966;
+    font-family: 'Chivo', sans-serif;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* -------Card----------- */
+div.card-container > div:nth-of-type(odd){
+    background: #FFFCF2;
+}
+
+.home .contact-card{
+    border-top: 0.25px solid #D7D7D7;
+    padding: 0;
+    height: 284px;
+    display: flex;
+}
+
+
+.contact-card .info{
+    width: 275px;
+    padding: 20px 30px 30px 30px;
+}
+
+.info .name{
+    color: #000;
+    font-family: 'Chivo', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
+
+.info .about{
+    color: #000;
+    font-family: 'Chivo', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 18px;
+}
+
+
+.info .deatils-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info .deatils-container .group{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info .deatils-container .group h3{
+    margin: 0;
+    color: #000;
+    text-align: center;
+    font-family: 'Chivo', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.info .deatils-container .group p{
+    margin: 0;
+    color: #000;
+    font-family: 'Chivo', sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.info .contacts{
+    padding-top: 30px;
+}
+
+.info .contacts h4{
+    margin: 0;
+    color: #000;
+    font-family: 'Chivo', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.rating-stars{
+    padding: 0;
+    display: flex;
+    gap: 4px;
+}
+
+.rating-stars .star{
+
+}
+
+/* -------------- Card-buttons ---------------------- */
+
+.contact-card .divider-line{
+    margin-top: 27px;
+    width: 0.25px;
+    height: 237px;
+    background: #D0D0D0;
+}
+
+.contact-card .buttons{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px 40px 28px;
+    gap: 35px;
+}
+
+.contact-card .buttons a{
+    padding: 0;
+    height: 35px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-card .buttons a p{
+    margin: 0;
+    color: #8D4337;
+    font-family: 'Chivo', sans-serif;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+
+
+@media only screen and (min-width: 768px){
+    .home{
+        display: flex;
+    }
+    .home .top-section{
+        padding: 20px 0 0 20px;
+        min-width: 250px;
+        display: flex;
+        flex-direction: column;
+    }
 }
