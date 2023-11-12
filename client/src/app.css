@@ -66,7 +66,7 @@
     gap: 0;
     text-decoration: none;
     top: 70px;
-    right: -100%;
+    left: -100%;
     text-align: start;
     width: 100%;
     transition: 0.7s ease-in-out;
@@ -75,7 +75,7 @@
 }
 
 .active-links{
-    right: -50% !important;
+    left: 50% !important;
 }
 
 .links a{
