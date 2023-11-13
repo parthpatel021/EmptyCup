@@ -79,16 +79,25 @@
 }
 
 .links a{
-    margin: 10px 0;
+    margin: 5px 0;
     color: #716966;
+    border-bottom: transparent solid 3px;
+}
+
+.links .active{
+    color: #E0A64E !important;
+    border-bottom: #E0A64E solid 3px;
+}
+.links a:hover{
+    color: #FFF !important;
+    background-color: #E0A64E;
 }
 
 /* ---------Home--------------- */
 .home{
-
 }
 
-.home .top-section{
+.top-section{
     background-color: #fff;
     height: 90px;
     display: flex;
@@ -98,13 +107,13 @@
 
 }
 
-.home .top-section .top-part{
+.top-section .top-part{
     display: flex;
     justify-content: space-between;
     gap: 25px;
 }
 
-.home .top-section .top-part a{
+.top-section .top-part a{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,11 +122,11 @@
     color: #000;
 }
 
-.home .top-section .top-part a svg{
+.top-section .top-part a svg{
 
 }
 
-.home .top-section .top-part a p{
+.top-section .top-part a p{
     margin-top: 9px;
     margin-bottom: 0;
     color: #716966;
@@ -133,7 +142,7 @@ div.card-container > div:nth-of-type(odd){
     background: #FFFCF2;
 }
 
-.home .contact-card{
+.contact-card{
     border-top: 0.25px solid #D7D7D7;
     padding: 0;
     height: 284px;
@@ -264,7 +273,8 @@ div.card-container > div:nth-of-type(odd){
 
 
 @media only screen and (min-width: 768px){
-    .home{
+    
+    .contact{
         display: flex;
     }
     
@@ -302,7 +312,7 @@ div.card-container > div:nth-of-type(odd){
         margin: 0;
     }
 
-    .home .top-section{
+    .top-section{
         padding-top: 20px;
         display: flex;
         flex-direction: column;
@@ -312,7 +322,7 @@ div.card-container > div:nth-of-type(odd){
         height: 100vh;
     }
     
-    .home .top-section .top-part{
+    .top-section .top-part{
         padding-left: 20px;
         display: flex;
         flex-direction: column;
@@ -322,12 +332,12 @@ div.card-container > div:nth-of-type(odd){
         width: 100%;
     }
 
-    .home .top-section .right{
+    .top-section .right{
         border-top: #D0D0D0 solid 0.255px;
         padding-top: 15px;
     }
 
-    .home .top-section .top-part a{
+    .top-section .top-part a{
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -336,11 +346,11 @@ div.card-container > div:nth-of-type(odd){
         color: #000;
     }
 
-    .home .top-section .top-part a svg{
+    .top-section .top-part a svg{
 
     }
 
-    .home .top-section .top-part a p{
+    .top-section .top-part a p{
         margin: 0;
         padding-left: 10px;
         color: #716966;
@@ -351,12 +361,12 @@ div.card-container > div:nth-of-type(odd){
         line-height: normal;
     }
 
-    .home .card-container{
+    .card-container{
         display: grid;
         grid-template-columns: auto auto;
     }
 
-    .home .contact-card{
+    .contact-card{
         background: #fff !important;
         border: none;
         padding: 0;

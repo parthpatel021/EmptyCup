@@ -1,5 +1,5 @@
 import React from 'react'
-import "../app.css";
+import "../../app.css";
 
 const getRatingVector = (rating) => {
     var rat = [0,0,0,0,0];
