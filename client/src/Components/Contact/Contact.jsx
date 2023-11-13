@@ -1,19 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import dataList from '../../data.js'
 import Card from './Card.jsx'
 import "../../app.css";
 
 const Contact = (props) => {
-    const shortlisted = props.shortlisted;
+    const isShortlisted = props.shortlisted;
     
-    var data = shortlisted ? dataList.filter((contact) => (contact.shortlisted === true)) : dataList;
+    const [data,setData] = useState([...dataList]);
 
+    const toggleShortlisting = (idx, prev) => {
+        var currData = data;
+        currData[idx].shortlisted = !prev;
+        setData(currData);
+
+        console.log(data);
+    }
   return (
     <>
         <div className='card-container'>
-            {data.map((d,i) => (
-                <Card key={i}  data={d} />
-            ))}
+            {data.map((d,i) => {
+                if(isShortlisted & !d.shortlisted){
+                    return <></>
+                } else {
+                    return <Card key={i} index={i} data={d} toggleShortlisting={toggleShortlisting}/>
+                }
+            })}
         </div>
         
     </>

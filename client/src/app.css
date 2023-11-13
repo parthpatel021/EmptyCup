@@ -68,7 +68,7 @@
     top: 70px;
     left: -100%;
     text-align: start;
-    width: 100%;
+    width: 50%;
     transition: 0.7s ease-in-out;
     background-color: #FFFCF2;
     padding: 10px;
@@ -288,6 +288,7 @@ div.card-container > div:nth-of-type(odd){
         display: flex;
         justify-content: space-between;
         gap: 15px;
+        width: 100%;
         flex-direction: row;
         position: inherit;
         background: #fff;
