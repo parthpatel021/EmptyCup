@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@100;200;300;400;500;600;700;800;900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,11 +13,11 @@
     border-bottom: 0.25px solid #D0D0D0;
 }
 
-.navbar .container-fluid{
+.navbar .container-fluid {
     padding: 0px 25px;
 }
 
-.navbar a{
+.navbar a {
     text-decoration: none;
 }
 
@@ -52,9 +52,11 @@
 .hamburger.active .bar:nth-child(2) {
     opacity: 0;
 }
+
 .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
+
 .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
@@ -74,30 +76,85 @@
     padding: 10px;
 }
 
-.active-links{
+.active-links {
     left: 50% !important;
 }
 
-.links a{
+.links a {
     margin: 5px 0;
     color: #716966;
     border-bottom: transparent solid 3px;
 }
 
-.links .active{
+.links .active {
     color: #E0A64E !important;
     border-bottom: #E0A64E solid 3px;
 }
-.links a:hover{
-    color: #FFF !important;
-    background-color: #E0A64E;
+
+.links a:hover {
+    color: #E0A64E !important;
+}
+
+/* --------- Footer -------------------- */
+
+footer {
+    border-top: 0.25px solid #D0D0D0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 40px;
+}
+
+footer div {
+    /* width: 250px; */
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .logo {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+footer .footer-links a {
+    text-decoration: none;
+    color: #716966;
+    font-family: 'Chivo', sans-serif;
+    font-size: 15px;
+}
+
+footer .footer-links a:hover{
+    color: #E0A64E;
+}
+
+footer .copyright {
+    color: #716966;
+    font-family: 'Chivo', sans-serif;
+    font-size: 11px;
+
 }
 
 /* ---------Home--------------- */
-.home{
+.home {}
+
+.home .loader {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.top-section{
+.top-section {
     background-color: #fff;
     height: 90px;
     display: flex;
@@ -107,13 +164,13 @@
 
 }
 
-.top-section .top-part{
+.top-section .top-part {
     display: flex;
     justify-content: space-between;
     gap: 25px;
 }
 
-.top-section .top-part a{
+.top-section .top-part a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,11 +179,9 @@
     color: #000;
 }
 
-.top-section .top-part a svg{
+.top-section .top-part a svg {}
 
-}
-
-.top-section .top-part a p{
+.top-section .top-part a p {
     margin-top: 9px;
     margin-bottom: 0;
     color: #716966;
@@ -138,11 +193,11 @@
 }
 
 /* -------Card----------- */
-div.card-container > div:nth-of-type(odd){
+div.card-container>div:nth-of-type(odd) {
     background: #FFFCF2;
 }
 
-.contact-card{
+.contact-card {
     border-top: 0.25px solid #D7D7D7;
     padding: 0;
     height: 284px;
@@ -150,11 +205,11 @@ div.card-container > div:nth-of-type(odd){
 }
 
 
-.contact-card .info{
+.contact-card .info {
     padding: 20px 15px 30px 30px;
 }
 
-.info .name{
+.info .name {
     color: #000;
     font-family: 'Chivo', sans-serif;
     font-size: 18px;
@@ -164,7 +219,7 @@ div.card-container > div:nth-of-type(odd){
     margin: 0;
 }
 
-.info .about{
+.info .about {
     color: #000;
     font-family: 'Chivo', sans-serif;
     font-size: 10px;
@@ -175,20 +230,20 @@ div.card-container > div:nth-of-type(odd){
 }
 
 
-.info .deatils-container{
+.info .deatils-container {
     display: flex;
     justify-content: space-between;
     padding-right: 30px;
 }
 
-.info .deatils-container .group{
+.info .deatils-container .group {
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.info .deatils-container .group h3{
+.info .deatils-container .group h3 {
     margin: 0;
     color: #000;
     text-align: center;
@@ -198,7 +253,7 @@ div.card-container > div:nth-of-type(odd){
     font-weight: 600;
 }
 
-.info .deatils-container .group p{
+.info .deatils-container .group p {
     margin: 0;
     color: #000;
     font-family: 'Chivo', sans-serif;
@@ -207,11 +262,11 @@ div.card-container > div:nth-of-type(odd){
     font-weight: 400;
 }
 
-.info .contacts{
+.info .contacts {
     padding-top: 30px;
 }
 
-.info .contacts h4{
+.info .contacts h4 {
     margin: 0;
     color: #000;
     font-family: 'Chivo', sans-serif;
@@ -221,33 +276,31 @@ div.card-container > div:nth-of-type(odd){
     line-height: normal;
 }
 
-.rating-stars{
+.rating-stars {
     padding: 0;
     display: flex;
     gap: 4px;
 }
 
-.rating-stars .star{
-
-}
+.rating-stars .star {}
 
 /* -------------- Card-buttons ---------------------- */
 
-.contact-card .divider-line{
+.contact-card .divider-line {
     margin-top: 27px;
     width: 0.25px;
     height: 237px;
     background: #D0D0D0;
 }
 
-.contact-card .buttons{
+.contact-card .buttons {
     display: flex;
     flex-direction: column;
     padding: 20px 25px 40px 20px;
     gap: 35px;
 }
 
-.contact-card .buttons a{
+.contact-card .buttons a {
     padding: 0;
     height: 35px;
     text-decoration: none;
@@ -257,7 +310,7 @@ div.card-container > div:nth-of-type(odd){
     align-items: center;
 }
 
-.contact-card .buttons a p{
+.contact-card .buttons a p {
     padding: 2px;
     margin: 0;
     color: #8D4337;
@@ -272,19 +325,19 @@ div.card-container > div:nth-of-type(odd){
 
 
 
-@media only screen and (min-width: 768px){
-    
-    .contact{
+@media only screen and (min-width: 768px) {
+
+    .contact {
         display: flex;
     }
-    
-    .navbar .nav-links{
+
+    .navbar .nav-links {
         display: flex;
         justify-content: space-between;
         gap: 10px;
     }
-    
-    .navbar .nav-links .links{
+
+    .navbar .nav-links .links {
         display: flex;
         justify-content: space-between;
         gap: 15px;
@@ -293,8 +346,8 @@ div.card-container > div:nth-of-type(odd){
         position: inherit;
         background: #fff;
     }
-    
-    .navbar .nav-links a{
+
+    .navbar .nav-links a {
         text-decoration: none;
         color: #716966;
         font-family: 'Chivo', sans-serif;
@@ -304,16 +357,15 @@ div.card-container > div:nth-of-type(odd){
         line-height: normal;
     }
 
-    .navbar .hamburger{
-        
-    }
-    .navbar .hamburger .bar{
+    .navbar .hamburger {}
+
+    .navbar .hamburger .bar {
         width: 0px;
         height: 0px;
         margin: 0;
     }
 
-    .top-section{
+    .top-section {
         padding-top: 20px;
         display: flex;
         flex-direction: column;
@@ -322,8 +374,8 @@ div.card-container > div:nth-of-type(odd){
         width: 40vh;
         height: 100vh;
     }
-    
-    .top-section .top-part{
+
+    .top-section .top-part {
         padding-left: 20px;
         display: flex;
         flex-direction: column;
@@ -333,12 +385,12 @@ div.card-container > div:nth-of-type(odd){
         width: 100%;
     }
 
-    .top-section .right{
+    .top-section .right {
         border-top: #D0D0D0 solid 0.255px;
         padding-top: 15px;
     }
 
-    .top-section .top-part a{
+    .top-section .top-part a {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -347,11 +399,9 @@ div.card-container > div:nth-of-type(odd){
         color: #000;
     }
 
-    .top-section .top-part a svg{
+    .top-section .top-part a svg {}
 
-    }
-
-    .top-section .top-part a p{
+    .top-section .top-part a p {
         margin: 0;
         padding-left: 10px;
         color: #716966;
@@ -362,12 +412,12 @@ div.card-container > div:nth-of-type(odd){
         line-height: normal;
     }
 
-    .card-container{
+    .card-container {
         display: grid;
         grid-template-columns: auto auto;
     }
 
-    .contact-card{
+    .contact-card {
         background: #fff !important;
         border: none;
         padding: 0;
@@ -376,18 +426,56 @@ div.card-container > div:nth-of-type(odd){
     }
 
 
-    
-    div.card-container > div:nth-of-type(4n+2), 
+
+    div.card-container>div:nth-of-type(4n+2),
     /* div.card-container >  div:nth-of-type(6n-1), */
-    div.card-container >  div:nth-of-type(4n+3){
+    div.card-container>div:nth-of-type(4n+3) {
         background: #FFFCF2 !important;
     }
-    
-    .contact-card .info{
+
+    .contact-card .info {
         padding: 20px 15px 30px 30px;
     }
-    
 
+
+
+    footer {
+        border-top: 0.25px solid #D0D0D0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px 60px;
+    }
+
+    footer div {
+        /* width: 250px; */
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .footer-links {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    footer .footer-links a {
+        text-decoration: none;
+        color: #716966;
+        font-family: 'Chivo', sans-serif;
+    }
+
+    footer .logo {
+        width: auto;
+        height: auto;
+    }
+
+    footer .copyright {
+        color: #716966;
+        font-family: 'Chivo', sans-serif;
+        font-size: 12px;
+
+    }
 
 
 

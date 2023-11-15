@@ -25,7 +25,7 @@ const ContactPage = () => {
 
     return (
         <>
-            <Layout >
+            <Layout>
                 <section className='contact'>
                     <div className='top-section'>
                         <Sidebar 
