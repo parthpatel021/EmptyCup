@@ -3,7 +3,7 @@ import Stars from './Stars';
 import { Link } from 'react-router-dom';
 
 const Card = (props) => {
-    const { name, rating, about, projects, experience, price, contacts, shortlisted} = props.data;
+    const { _id, name, rating, about, projects, experience, price, contacts, shortlisted} = props.data;
 
     const [isShortlisted,setIsShortlisted] = useState(shortlisted);
     const toggleShortlisting = () => {

@@ -331,6 +331,11 @@ div.card-container>div:nth-of-type(odd) {
         display: flex;
     }
 
+    .navbar .header-text-container{
+        position: absolute;
+        left: 45%;
+    }
+
     .navbar .nav-links {
         display: flex;
         justify-content: space-between;
@@ -357,7 +362,9 @@ div.card-container>div:nth-of-type(odd) {
         line-height: normal;
     }
 
-    .navbar .hamburger {}
+    .navbar .hamburger {
+        width: 0 !important;
+    }
 
     .navbar .hamburger .bar {
         width: 0px;

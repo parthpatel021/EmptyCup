@@ -24,7 +24,7 @@ const Navbar = () => {
                         
                     </div>
 
-                    <div>
+                    <div className='header-text-container'>
                         <Link to="/">
                             <span className='navbar-text'>EmptyCup</span>
                         </Link>

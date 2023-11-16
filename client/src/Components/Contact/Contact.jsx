@@ -1,20 +1,34 @@
-import React, { useState } from 'react'
-import dataList from '../../data.js'
+import React, { useEffect, useState } from 'react'
+import axios from "axios";
 import Card from './Card.jsx'
 import "../../app.css";
 
 const Contact = (props) => {
     const isShortlisted = props.shortlisted;
-    
-    const [data,setData] = useState([...dataList]);
+    const [data,setData] = useState([]);
+
+    // get all contacts
+    const getAllContacts = async (req,res) => {
+        try {
+            const {data} = await axios.get(`${process.env.REACT_APP_BASE_URL}api/v1/contacts`);
+            const contacts = data.contacts;
+            // console.log(contacts);
+            setData(contacts);
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    useEffect(() => {
+        getAllContacts();
+    },[])
 
     const toggleShortlisting = (idx, prev) => {
         var currData = data;
         currData[idx].shortlisted = !prev;
         setData(currData);
-
-        console.log(data);
     }
+
   return (
     <>
         <div className='card-container'>
