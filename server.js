@@ -28,9 +28,9 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, './client/build')));
 
 // rest api
-app.use('*', function(req,res){
-    res.sendFile(path.join(__dirname, './client/build/index.html'));
-});
+// app.use('*', function(req,res){
+//     res.sendFile(path.join(__dirname, './client/build/index.html'));
+// });
 
 //routes
 app.use("/api/v1/contacts", contactsRoutes);
