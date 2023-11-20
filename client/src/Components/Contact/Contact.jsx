@@ -24,15 +24,25 @@ const Contact = (props) => {
     },[])
 
     const toggleShortlisting = (idx, prev) => {
-        var currData = data;
-        currData[idx].shortlisted = !prev;
-        setData(currData);
+        // var currData = data;
+        // currData[idx].shortlisted = !prev;
+        // setData(currData);
+
+        setData(data => {
+            return data.map((d,i) => {
+                if(idx === i){
+                    d = { ...d, shortlisted: !prev};
+                }
+                return d;
+            })
+        })
+      
     }
 
   return (
     <>
         <div className='card-container'>
-            {data.map((d,i) => {
+            { data.map((d,i) => {
                 if(isShortlisted & !d.shortlisted){
                     return <></>
                 } else {
